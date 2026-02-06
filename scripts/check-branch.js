@@ -3,10 +3,10 @@ const path = require('path');
 
 const branchName = getCurrentBranchName();
 
-const isValidBranchName = branchName === "main" || branchName === "beta" || branchName === "production" || /^(feature|bugfix|improvement)\/.{2,7}-\d{2,7}-.+$/.test(branchName);
+const isValidBranchName = branchName === "main" || branchName === "develop" || branchName === "beta" || branchName === "production" || /^(feature|bugfix|improvement|conflict|chore)\/.{2,7}-\d{2,7}-.+$/.test(branchName);
 
 if (!isValidBranchName) {
-  console.error('Error: Branch name must start with feature/bugfix/improvement and have the task id like: feature/AQG-1234-test-branch-name');
+  console.error('Error: Branch name must start with feature/bugfix/improvement/conflict and have the task id like: feature/AQG-1234-test-branch-name');
   process.exit(1);
 }
 

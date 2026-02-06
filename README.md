@@ -7,6 +7,8 @@ Padronização de branches e mensagens de commit para manter consistência nos p
 ### Branches principais
 - `main` - branch de produção estável
 - `production` - branch de produção
+- `develop` - branch de development
+- `beta` - branch beta
 
 ### Branches de desenvolvimento
 
@@ -16,6 +18,9 @@ Devem seguir o padrão: `<tipo>/<id-tarefa>-<descrição>`
 - `feature` - nova funcionalidade
 - `bugfix` - correção de bug
 - `improvement` - otimização ou melhoria
+- `hotfix` -  aplicação de hotfix
+- `conflict` - Branch para resolução de conflito
+- `chore` - branch para ajustes diversos
 
 **Exemplos:**
 ```
